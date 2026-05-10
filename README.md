@@ -88,3 +88,15 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller -n ku
 ```
 kubectl get pods -n kube-system
 ```
+
+
+```
+kubectl apply -f app1/manifest.yaml
+```
+```
+kubectl apply -f app2/manifest.yaml
+```
+```
+kubectl apply -f app3/manifest.yaml
+```
+
