@@ -100,3 +100,10 @@ kubectl apply -f app2/manifest.yaml
 kubectl apply -f app3/manifest.yaml
 ```
 
+* Then create route53 record with alias name:  arn:aws:elasticloadbalancing:us-east-1:805778285734:loadbalancer/app/k8s-lingadevops-f5ac93a1e1/4ca2a0ce96c94a7b
+
+you can make route53 record to "*.lithesh.shop" allows app1, app2, app3.
+
+http://app1.lithesh.shop:80/
+
+* Note: We no need to create separate load balancers, we combined into lingadevops group and using it with one route53 record.
